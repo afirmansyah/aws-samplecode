@@ -4,6 +4,14 @@ files:
   - source: /
     destination: /var/www/html
 hooks:
+  ApplicationStop:
+    - location: -
+      timeout: 3
+      runas: root
+  DownloadBundle:
+    - location: -
+      timeout: 3
+      runas: root
   BeforeInstall:
     - location: scripts/install_dependencies.sh
       timeout: 300
