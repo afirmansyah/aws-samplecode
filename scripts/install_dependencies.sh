@@ -1,4 +1,4 @@
 #!/bin/bash
-yum update -y
+sudo yum update -y
 sudo amazon-linux-extras install php7.4
-yum install -y httpd.x86_64
+sudo yum install -y httpd.x86_64
